@@ -22,8 +22,20 @@ public class Student
          name=scanner.next();
          System.out.println("Enter Student Maths Marks:");
          maths= scanner.nextInt();
+         if(maths<0 || maths>100)
+         {
+             System.out.println("Marks Should be between 0 to 100");
+             System.out.println("Enter Maths Marks:");
+             maths=scanner.nextInt();
+         }
          System.out.println("Enter Student Science Marks:");
          science=scanner.nextInt();
+         if(science<0 || science>100)
+         {
+             System.out.println("Marks Should be between 0 to 100");
+             System.out.println("Enter Science Marks:");
+             science=scanner.nextInt();
+         }
 
      }
 
